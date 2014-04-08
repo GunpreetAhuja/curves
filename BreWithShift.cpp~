@@ -1,0 +1,31 @@
+// To illustrate a circle
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	float r;
+    cout<< " Enter the Radius"; 
+    cin>>  r;
+    float pr = 2; // pr is the aspected pixel ratio which is almost equal to 2
+    
+   
+
+    for (int i = 0; i <= 2*r; i++) // loop for horizontal movement
+    {
+        for (int j = 0; j <= 2*r; j++) // loop for vertical movement
+        {
+           float d = ((i*pr)/r)*((i*pr)/r) + (j/r)*(j/r); //multipyling the i variable  with pr to equalize pixel-width with the height
+            if (d >0.97 && d<1.05)  // approximation
+            {
+                cout << "*";
+            }
+            else
+            {
+                 cout << " ";
+            }
+        }
+        cout << endl;
+    }
+         return 0;
+            }
