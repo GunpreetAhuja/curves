@@ -1,5 +1,3 @@
-
-
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
@@ -8,18 +6,18 @@ int main()
 float x,y,rad,scale;
 int row,col, hgt,wth;
 char circle[500][500];
-cout<<” Enter the size of the plane: “;
+cout<<" Enter the size of the plane: ";
 cin>>hgt>>wth;
-cout<<”\n Enter the scale factor: “;
+cout<<"\n Enter the scale factor: ";
 cin>>scale;
 for(int r=0;r<hgt;r++)
 {
 for(int c=0;c<wth;c++)
 {
-circle[r][c]=’ ‘;
+circle[r][c]=' ';
 }
 }
-cout<<”Enter the radius: “;
+cout<<"Enter the radius: ";
 cin>>rad;
 rad*=scale;
 //for scaling to the appropriate size
@@ -42,28 +40,28 @@ sum=sum+4*(x-y)+10;
 }
 row=hgt/3+x*0.53;
 col=wth/2+y;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-x*0.53;
 col=wth/2+y;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3+x*0.53;
 col=wth/2-y;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-x*0.53;
 col=wth/2-y;
-circle[row][col]=’*’;
+circle[row][col]='*;
 row=hgt/3+y*0.53;
 col=wth/2+x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-y*0.53;
 col=wth/2+x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3+y*0.53;
 col=wth/2-x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-y*0.53;
 col=wth/2-x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 }
 while(x<=y);
 

@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 float r;
-cout<< ” Enter the Radius”;
+cout<< " Enter the Radius";
 cin>>  r;
 float pr = 2;
 // pr is the aspected pixel ratio which is almost equal to 2
@@ -24,11 +24,11 @@ if (d >0.90 && d<1.1)
 // approximation
 
 {
-cout << “*”;
+cout << "*";
 }
 else
 {
-cout << ” “;
+cout << " ";
 }
 }
 cout << endl;

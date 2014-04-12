@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
@@ -8,18 +7,18 @@ int main()
     float x,y,rad,scale , asp_hgt;
     int row,col, hgt,wth,a,b;
     char circle[500][500];
-    cout<<” Enter the size of the plane: “;
+    cout<<" Enter the size of the plane: ";
     cin>>hgt>>wth;
-    cout<<”\n Enter the scale factor: “;
+    cout<<"\n Enter the scale factor: ";
     cin>>scale;
-    cout<<” \n Enter the position of origin: “;
+    cout<<" \n Enter the position of origin: ";
     cin>>a>>b;
     asp_hgt=hgt/1.5;  
     for(int row=0;row<hgt;row++)     
     {
         for(int col=0;col<wth;col++)
         {
-            circle[row][col]=’ ‘;
+            circle[row][col]=' ';
         }
     }
 
@@ -27,7 +26,7 @@ int main()
          for ( col=0; col<=wth; col++)
         {  
             row= asp_hgt/2;
-            circle[row][col]=’_’;
+            circle[row][col]='_';
         }
     
    //for vertical axis
@@ -35,9 +34,9 @@ int main()
     {       
 
              col = wth/2;
-            circle[row][col]=’|’;
+            circle[row][col]='|';
     }
-    cout<<”Enter the radius: “;
+    cout<<"Enter the radius: ";
     cin>>rad;
     rad*=scale;              
     //for scaling   
@@ -63,28 +62,28 @@ int main()
        //a and b for shift      
 
        col=wth/2+y+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3-x*0.53+b*0.53;
        col=wth/2+y+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3+x*0.53+b*0.53;
        col=wth/2-y+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3-x*0.53+b*0.53;
        col=wth/2-y+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3+y*0.53+b*0.53;
        col=wth/2+x+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3-y*0.53+b*0.53;
        col=wth/2+x+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3+y*0.53+b*0.53;
        col=wth/2-x+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
        row=hgt/3-y*0.53+b*0.53;
        col=wth/2-x+a;
-       circle[row][col]=’*’;
+       circle[row][col]='*';
     }
     while(x<=y);
    

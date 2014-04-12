@@ -6,7 +6,7 @@ int main()
 float x,y,rad;
 int row,col, hgt,wth;
 char circle[500][500];
-cout<<” Enter the size of the plane: “;
+cout<<" Enter the size of the plane: ";
 // to define the coordinate plane
 
 cin>>hgt>>wth;
@@ -16,10 +16,10 @@ for(int r=0;r<hgt;r++)
 {
 for(int c=0;c<wth;c++)
 {
-circle[r][c]=’ ‘;
+circle[r][c]=' ';
 }
 }
-cout<<”Enter the radius: “;
+cout<<"Enter the radius: ";
 cin>>rad;
 y=rad;
 x=0;
@@ -49,32 +49,32 @@ row=hgt/3+x*0.53;
 col=wth/2+y;
 //reaching the middle of the graph width-wise
 
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-x*0.53;
 //computing the row and the column number to reach the point on the plane and store them in the array circle
 
 col=wth/2+y;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3+x*0.53;
 //rest points are plotted as per the symmetry of the circle (7 more points can be obtained from a single point coordinates)
 
 col=wth/2-y;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-x*0.53;
 col=wth/2-y;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3+y*0.53;
 col=wth/2+x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-y*0.53;
 col=wth/2+x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3+y*0.53;
 col=wth/2-x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 row=hgt/3-y*0.53;
 col=wth/2-x;
-circle[row][col]=’*’;
+circle[row][col]='*';
 }
 while(x<=y);
 // the condition to be satisfied for bresenham algorithm

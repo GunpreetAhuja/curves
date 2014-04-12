@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 int r;
-cout<< “Enter the value of the a in focus(a,0):”;
+cout<< "Enter the value of the a in focus(a,0):";
 cin>>r;
 float c=2;
 // pr is the aspected pixel ratio which is almost equal to 2
@@ -11,7 +11,7 @@ float c=2;
 float a = c*r;
 //multipyling the radius with c to equalize pixel-width with the height
 
-cout<<”Parabola with “<<r<<” as focus:\n\n”;
+cout<<"Parabola with “<<r<<” as focus:\n\n";
 for (int x=0; x<=r; x++)
 // loop for horizontal movement
 
@@ -25,11 +25,11 @@ if ((d >0.9 && d<1.1) || (y*y >= 4*a*x-25 && y*y <= 4*a*x+25))
 // approximation
 
 {
-cout << “*”;
+cout << "*";
 }
 else
 {
-cout<<” “;
+cout<<" ";
 }
 }
 cout<< endl;
